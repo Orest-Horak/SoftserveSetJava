@@ -5,21 +5,22 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class main4 {
-    public static void check(float a){
+    public static Boolean check(float a){
 
     if ((a<5) &&(a>-5)){
-            System.out.println("Float number is in range [-5,5]");
+
+            return true;
 
         }
     else
     {
-        System.out.println("Float number isn't in range [-5,5]");
+
+        return false;
     }
 
 
     }
     public static void erorhttp(int er) {
-
 
         HTTPError error = null;
 
@@ -63,9 +64,19 @@ public class main4 {
         Float b = Float.valueOf(bf.readLine());
         System.out.println("Input float c");
         Float c = Float.valueOf(bf.readLine());
-        check(a);
-        check(b);
-        check(c);
+        if (check(a)==true){
+            System.out.println("Float number is in range [-5,5]");
+        }
+        else { System.out.println("Float number isn't in range [-5,5]");}
+
+        if (check(b)==true){
+            System.out.println("Float number is in range [-5,5]");
+        }
+        else { System.out.println("Float number isn't in range [-5,5]");}
+        if (check(c)==true){
+            System.out.println("Float number is in range [-5,5]");
+        }
+        else { System.out.println("Float number isn't in range [-5,5]");}
         //task2
         Integer d= Integer.valueOf(bf.readLine());
         Integer e= Integer.valueOf(bf.readLine());
