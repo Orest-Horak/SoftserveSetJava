@@ -11,9 +11,9 @@ import java.util.ListIterator;
 public class Student {
 
 	private String name;
-	private String course;
+	private Integer course;
 
-	public Student(String name, String course) {
+	public Student(String name, Integer course) {
 
 		this.name = name;
 		this.course = course;
@@ -32,11 +32,11 @@ public class Student {
 		this.name = name;
 	}
 
-	public String getCourse() {
+	public Integer getCourse() {
 		return course;
 	}
 
-	public void setCourse(String course) {
+	public void setCourse(Integer course) {
 		this.course = course;
 	}
 
@@ -57,16 +57,16 @@ public class Student {
 
 	public static void main(String[] args) {
 		List student = new ArrayList<Student>();
-		student.add(new Student("Alina","3 course"));
-		student.add(new Student("Petro", "5 course"));
-		student.add(new Student("Vasyl", "1 course"));
-		student.add(new Student("Ivan", "5 course"));
-		student.add(new Student("Stepan", "6 course"));
-		student.add(new Student("Vika", "1 course"));
-		student.add(new Student("Ira", "3 course"));
-		student.add(new Student("Katya", "4 course"));
-		student.add(new Student("Sofia", "2 course"));
-		student.add(new Student("Milka", "4 course"));
+		student.add(new Student("Alina",3));
+		student.add(new Student("Petro", 5));
+		student.add(new Student("Vasyl", 1));
+		student.add(new Student("Ivan", 5));
+		student.add(new Student("Stepan", 6));
+		student.add(new Student("Vika", 7));
+		student.add(new Student("Ira", 1));
+		student.add(new Student("Katya", 3));
+		student.add(new Student("Sofia", 2));
+		student.add(new Student("Milka", 1));
 		printStud(student);
 		System.out.println();
 		System.out.println("************Ordered by name:******************");
